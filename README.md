@@ -32,4 +32,4 @@ This LaTeX template is intended to help students of USIM format their thesis acc
 ## Structure
 
 The LaTeX template is organized as follows:
-
+├── bibliography/ │ ├── references.bib # Bibliography file in BibTeX format │ └── thesis.bst # Bibliography style file for APA citation ├── chapters/ │ ├── chapter1.tex # Chapter 1 content │ ├── chapter2.tex # Chapter 2 content │ ├── frontmatter.tex # Front matter including Acknowledgements, Abstract, etc. │ ├── hardbound.tex # Hardbound title page │ ├── titlepage.tex # Title page content │ └── chapterN.tex # Additional chapters ├── styles/ │ ├── thesis.cls # Main LaTeX class for thesis formatting │ ├── custom.sty # Custom styling for TOC, LOT, LOF, etc. ├── main.tex # Main LaTeX file that compiles the thesis ├── README.md # Instructions for using this template └── .gitignore # Files to ignore in GitHub repository
