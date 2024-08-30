@@ -42,7 +42,7 @@ To get started with this template:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/ainul21/USIM-Thesis-Templete.git
+    git clone https://github.com/ainul21/USIM-Thesis-Templete-LaTeX-Format.git
     ```
 
 2. **Install LaTeX**: Ensure that you have a LaTeX distribution installed on your system. You can use distributions like [TeX Live](https://www.tug.org/texlive/) (Linux/Windows/macOS) or [MikTeX](https://miktex.org/) (Windows/macOS).
