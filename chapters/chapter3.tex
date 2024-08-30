@@ -1,0 +1,34 @@
+\chapter*{}  % Suppress automatic chapter title
+
+\setcounter{chapter}{3}  % Manually set the chapter counter to 3
+\setcounter{section}{0}  % Reset section counter
+\setcounter{subsection}{0}  % Reset subsection counter
+\setcounter{subsubsection}{0}  % Reset subsubsection counter
+
+\vspace*{-50mm}
+
+% Add Chapter 3 to the TOC (Methodology)
+\addcontentsline{toc}{chapter}{CHAPTER \thechapter: {\chapterTHREEtopic}}
+
+\vspace*{10mm}  % Top margin for the first page of the chapter
+
+% Custom Chapter 3 title, centered and bold
+\begin{center}
+    \textbf{CHAPTER \thechapter}\\
+    \vspace{5mm}  % Add space between CHAPTER X and INTRODUCTION
+    \textbf{\chapterTHREEtopic}
+\end{center}
+
+\vspace{10mm}  % Spacing after the chapter title
+
+% Section 3.1
+\section{Introduction}
+
+\setlength{\parindent}{1cm}  % Indent for paragraph
+
+\begin{spacing}{2}  % Double spacing for the text body
+
+% Write your content here...
+The methodology employed in this research involves the design and implementation of hypothetical algorithms within a simulated environment. Data was collected from a series of controlled experiments, each designed to test the performance of the algorithms under different conditions. The analysis includes statistical methods to evaluate the significance of the results, ensuring that the findings are robust and reliable.
+
+\end{spacing}

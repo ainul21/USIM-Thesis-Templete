@@ -1,0 +1,113 @@
+\documentclass[12pt, a4paper]{styles/thesis}
+
+% Packages
+\usepackage{styles/custom}  % Import your custom package
+\usepackage{setspace}
+\usepackage{tocloft}
+\usepackage{hyperref}
+\usepackage{indentfirst}
+\usepackage{apacite}  % Import the APA citation package
+
+% Thesis metadata (input details here)
+\newcommand{\thesistitle}{OIL PALM FRESH FRUIT BUNCH RIPENESS IDENTIFICATION USING DEEP LEARNING MODEL}
+\newcommand{\authorname}{Ainul Hakim Bin Fizal Sabillah}
+\newcommand{\degree}{MASTER OF SCIENCE IN ENGINEERING}
+\newcommand{\university}{UNIVERSITI SAINS ISLAM MALAYSIA}
+\newcommand{\submissiondate}{November 2024}
+\newcommand{\fulldate}{1 November 2024}
+\newcommand{\matrixnumber}{xxxxxxx}
+\newcommand{\address}{No xx, Jln XX XX, \\Tmn XX XX, \\XXXXX XX XX, \\XX.}
+
+\newcommand{\chapterONEtopic}{INTRODUCTION}
+\newcommand{\chapterTWOtopic}{LITERATURE REVIEW}
+\newcommand{\chapterTHREEtopic}{METHODOLOGY}
+\newcommand{\chapterFOURtopic}{RESULT}
+\newcommand{\chapterFIVEtopic}{DISCUSSION}
+\newcommand{\chapterSIXtopic}{CONCLUSION}
+
+% Document begins
+\begin{document}
+
+% Hardbound Page
+\pagenumbering{gobble} % Disable page numbering for the hardbound page
+\input{chapters/hardbound}
+
+% Title Page
+\newpage
+\pagenumbering{roman}
+\setcounter{page}{1} % Start numbering from i
+\thispagestyle{empty}
+\input{chapters/titlepage}
+
+% Author Declaration, Acknowledgements, etc.
+\clearpage
+\setcounter{page}{2}
+\input{chapters/frontmatter}
+
+% Disable hyperlinks for the TOC
+\hypersetup{hidelinks}
+
+% Custom TOC with CONTENT and PAGE headers
+\singlespacing  % Single spacing for TOC
+\begin{center}
+    {\fontsize{12pt}{14pt}\selectfont \textbf{TABLE OF CONTENTS}}
+\end{center}
+
+\vspace{10mm}  % Removed extra space between title and CONTENT headers
+
+% CONTENT and PAGE headers
+\noindent
+\textbf{CONTENT} \hfill \textbf{PAGE}
+
+% Removed unnecessary spacing here
+\vspace{-30mm} % Negative space to pull up the TOC entries closer to the CONTENT and PAGE headers
+
+% Table of Contents without automatic title
+\renewcommand{\contentsname}{}  % Disable the automatic "Contents" title
+\tableofcontents
+\cleardoublepage
+
+% Customize List of Tables Layout
+\begin{center}
+    {\fontsize{12pt}{14pt}\selectfont \textbf{LIST OF TABLES}}
+\end{center}
+
+\vspace{10mm}  % Adjust the space between title and the first entry
+
+% CONTENT and PAGE headers
+\noindent
+\textbf{Tables} \hfill \textbf{Page}
+
+% Removed unnecessary spacing here
+\vspace{-30mm} % Negative space to pull up the TOC entries closer to the CONTENT and PAGE headers
+
+% List of Tables with Custom Formatting
+\renewcommand{\listtablename}{}  % Disable the automatic "List of Tables" title
+\renewcommand{\cfttabpresnum}{Table }  % Add "Table" before the number
+\renewcommand{\cfttabaftersnum}{:}  % Add a period after the table number
+\listoftables
+\cleardoublepage
+
+\listoffigures
+\cleardoublepage
+
+% Re-enable hyperlinks after the TOC
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=cyan}
+
+% Switch to Arabic numbering for the main content
+\newpage
+\pagenumbering{arabic}
+
+% Chapters: Please complete your chapter on chapters folder
+\input{chapters/chapter1}
+\input{chapters/chapter2}
+\input{chapters/chapter3}
+\input{chapters/chapter4}
+\input{chapters/chapter5}
+\input{chapters/chapter6}
+
+% Include this where you want your references to appear:
+\bibliographystyle{apacite}
+\bibliography{bibliography/references}
+
+\end{document}

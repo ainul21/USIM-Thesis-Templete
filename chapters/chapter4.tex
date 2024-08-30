@@ -1,0 +1,34 @@
+\chapter*{}  % Suppress automatic chapter title
+
+\setcounter{chapter}{4}  % Manually set the chapter counter to 4
+\setcounter{section}{0}  % Reset section counter
+\setcounter{subsection}{0}  % Reset subsection counter
+\setcounter{subsubsection}{0}  % Reset subsubsection counter
+
+\vspace*{-50mm}
+
+% Add Chapter 4 to the TOC (Result 1)
+\addcontentsline{toc}{chapter}{CHAPTER \thechapter: {\chapterFOURtopic}}
+
+\vspace*{10mm}  % Top margin for the first page of the chapter
+
+% Custom Chapter 4 title, centered and bold
+\begin{center}
+    \textbf{CHAPTER \thechapter}\\
+    \vspace{5mm}  % Add space between CHAPTER X and INTRODUCTION
+    \textbf{\chapterFOURtopic}
+\end{center}
+
+\vspace{10mm}  % Spacing after the chapter title
+
+% Section 4.1
+\section{Introduction}
+\setlength{\parindent}{1cm}  % Indent for paragraph
+
+\begin{spacing}{2}  % Double spacing for the text body
+
+% Write your content here...
+The results of the experiments are presented in this chapter, with a focus on the comparative performance of the algorithms. Tables and figures are used to illustrate the key findings, providing a clear overview of the data. The analysis shows that the proposed algorithms consistently outperform the traditional methods, particularly in scenarios with high computational demands.
+
+
+\end{spacing}

@@ -1,0 +1,34 @@
+\chapter*{}  % Suppress automatic chapter title
+
+\setcounter{chapter}{2}  % Manually set the chapter counter to 2
+\setcounter{section}{0}  % Reset section counter
+\setcounter{subsection}{0}  % Reset subsection counter
+\setcounter{subsubsection}{0}  % Reset subsubsection counter
+
+\vspace*{-50mm}
+
+% Add Chapter 2 to the TOC (Literature Review)
+\addcontentsline{toc}{chapter}{CHAPTER \thechapter: {\chapterTWOtopic}}
+
+\vspace*{10mm}  % Top margin for the first page of the chapter
+
+% Custom Chapter 2 title, centered and bold
+\begin{center}
+    \textbf{CHAPTER \thechapter}\\
+    \vspace{5mm}  % Add space between CHAPTER X and INTRODUCTION
+    \textbf{\chapterTWOtopic}
+\end{center}
+
+\vspace{10mm}  % Spacing after the chapter title
+
+% Section 2.1
+\section{Introduction}
+
+\setlength{\parindent}{1cm}  % Indent for paragraph
+
+\begin{spacing}{2}  % Double spacing for the text body
+
+% Write your content here...
+The existing body of literature on algorithms and system performance is extensive. Various studies have explored the optimization of computational methods, with notable contributions from researchers in both academia and industry. This chapter reviews key works that have shaped the current understanding of algorithmic efficiency. The discussion includes a comparison of traditional and contemporary approaches, highlighting gaps in the literature that this thesis aims to address.
+
+\end{spacing}

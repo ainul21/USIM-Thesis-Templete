@@ -1,0 +1,34 @@
+\chapter*{}  % Suppress automatic chapter title
+
+\setcounter{chapter}{5}  % Manually set the chapter counter to 5
+\setcounter{section}{0}  % Reset section counter
+\setcounter{subsection}{0}  % Reset subsection counter
+\setcounter{subsubsection}{0}  % Reset subsubsection counter
+
+\vspace*{-50mm}
+
+% Add Chapter 5 to the TOC (Result 2)
+\addcontentsline{toc}{chapter}{CHAPTER \thechapter: {\chapterFIVEtopic}}
+
+\vspace*{10mm}  % Top margin for the first page of the chapter
+
+% Custom Chapter 5 title, centered and bold
+\begin{center}
+    \textbf{CHAPTER \thechapter}\\
+    \vspace{5mm}  % Add space between CHAPTER X and INTRODUCTION
+    \textbf{\chapterFIVEtopic}
+\end{center}
+
+\vspace{10mm}  % Spacing after the chapter title
+
+% Section 5.1
+\section{Introduction}
+
+\setlength{\parindent}{1cm}  % Indent for paragraph
+
+\begin{spacing}{2}  % Double spacing for the text body
+
+% Write your content here...
+The discussion section interprets the results in the context of the research questions. The findings suggest that the new algorithms have significant potential for improving system performance, especially in complex environments. This chapter also explores the implications of the research, considering both the theoretical and practical applications of the algorithms.
+
+\end{spacing}

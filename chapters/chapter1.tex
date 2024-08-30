@@ -1,0 +1,43 @@
+\chapter*{}  % Suppress automatic chapter title
+
+\setcounter{chapter}{1}  % Manually set the chapter counter to 1
+\setcounter{section}{0}  % Reset section counter
+\setcounter{subsection}{0}  % Reset subsection counter
+\setcounter{subsubsection}{0}  % Reset subsubsection counter
+
+\vspace*{-50mm}
+
+% Add Chapter 1 to the TOC (Introduction)
+\addcontentsline{toc}{chapter}{CHAPTER \thechapter: {\chapterONEtopic}}
+
+\vspace*{10mm}  % Top margin for the first page of the chapter
+
+% Custom Chapter 1 title, centered and bold
+\begin{center}
+    \textbf{CHAPTER \thechapter}\\
+    \vspace{5mm}  % Add space between CHAPTER X and INTRODUCTION
+    \textbf{\chapterONEtopic}
+\end{center}
+
+\vspace{10mm}  % Spacing after the chapter title
+
+% Section 1.1
+\section{Background}
+
+% Section added to TOC
+% \addcontentsline{toc}{section}{1.1 \hspace{1em} Introduction}
+
+\setlength{\parindent}{1cm}  % Indent for paragraph
+
+\begin{spacing}{2}  % Double spacing for the text body
+
+% Write your content here...
+The study of advanced algorithms has been a significant area of research for decades. This thesis aims to contribute to this field by proposing a set of new algorithms designed to enhance system performance. The primary research question addresses the effectiveness of these algorithms in improving computational efficiency. The scope of this research is limited to simulated environments, providing a controlled setting for evaluation.
+
+\subsection{Background of the Study}
+The background of this study provides a foundation for understanding the context and significance of the research problem. This section discusses the historical development and current trends related to the research topic.
+\subsubsection{Historical Background}
+This subsubsection explores the historical context of the research topic, highlighting key developments that have shaped the field over time.
+
+
+\end{spacing}

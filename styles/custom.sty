@@ -1,0 +1,70 @@
+\ProvidesPackage{custom}[2024/08/01 v1.0 Custom thesis styles]
+
+% Section formatting
+\RequirePackage{titlesec}
+\RequirePackage{tocloft}
+\RequirePackage{hyperref}
+
+% Correcting TOC hyperlinks while keeping the titles uppercase
+\newcommand{\tocuppercase}[1]{\texorpdfstring{\MakeUppercase{#1}}{#1}}
+
+% Table of Contents (TOC) formatting
+\renewcommand{\cftchapfont}{\normalfont\fontsize{12pt}{14pt}\selectfont\tocuppercase}  % Uppercase visually, correct links
+\renewcommand{\cftsecfont}{\normalfont\fontsize{12pt}{14pt}\selectfont}   % Normal case for section titles
+\renewcommand{\cftsubsecfont}{\normalfont\fontsize{12pt}{14pt}\selectfont} % Normal case for subsection titles
+
+% Set font size for TOC page numbers (not bold)
+\renewcommand{\cftchappagefont}{\normalfont\fontsize{12pt}{14pt}\selectfont}  % Regular page numbers, 12pt, not bold
+\renewcommand{\cftsecpagefont}{\normalfont\fontsize{12pt}{14pt}\selectfont}   % Regular page numbers, 12pt, not bold
+\renewcommand{\cftsubsecpagefont}{\normalfont\fontsize{12pt}{14pt}\selectfont} % Regular page numbers, 12pt, not bold
+
+% Remove dots between titles and page numbers in the TOC
+\renewcommand{\cftdot}{}
+
+% Add spacing between chapters in the TOC
+\setlength{\cftbeforechapskip}{3pt}  % Space before chapter entries
+\setlength{\cftbeforesecskip}{3pt}    % Regular spacing before section entries
+\setlength{\cftbeforefigskip}{3pt}    % Spacing before figure entries
+\setlength{\cftbeforetabskip}{3pt}    % Spacing before table entries
+
+% Indentation settings for TOC entries
+\setlength{\cftchapindent}{0pt}
+\setlength{\cftsecindent}{25pt}
+\setlength{\cftsubsecindent}{50pt}
+
+% Ensure the captions are well formatted
+\RequirePackage{caption}
+\captionsetup[figure]{
+    font=small,
+    labelfont=bf,
+    justification=centering
+}
+\captionsetup[table]{
+    font=small,
+    labelfont=bf,
+    justification=centering
+}
+
+% Apply proper spacing throughout the document
+\RequirePackage{setspace}
+\setstretch{1.25}
+
+% Enable better math formatting
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+
+% Ensure that hyperlinks work properly
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Thesis},
+    pdfauthor={Your Name},
+    pdfsubject={Thesis Title},
+    pdfkeywords={Thesis, USIM, Engineering},
+    pdfpagemode=FullScreen,
+}
+
+\endinput
