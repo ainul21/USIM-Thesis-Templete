@@ -49,6 +49,8 @@ The LaTeX template is organized as follows:
 ├── README.md # Instructions for using this template 
 └── .gitignore # Files to ignore in GitHub repository
 
+📦 Your Repository Name ├── 📂 bibliography/ │ ├── 📄 references.bib # Bibliography file in BibTeX format │ └── 📄 thesis.bst # Bibliography style file for APA citation ├── 📂 chapters/ │ ├── 📄 chapter1.tex # Chapter 1 content │ ├── 📄 chapter2.tex # Chapter 2 content │ ├── 📄 frontmatter.tex # Front matter including Acknowledgements, Abstract, etc. │ ├── 📄 hardbound.tex # Hardbound title page │ └── 📄 chapterN.tex # Additional chapters ├── 📂 styles/ │ ├── 📄 thesis.cls # Main LaTeX class for thesis formatting │ └── 📄 custom.sty # Custom styling for TOC, LOT, LOF, etc. ├── 📄 main.tex # Main LaTeX file that compiles the thesis ├── 📄 README.md # Instructions for using this template └── 📄 .gitignore # Files to ignore in GitHub repository
+
 
 ## Getting Started
 
@@ -56,7 +58,7 @@ To get started with this template:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/your-repo-name.git
+    git clone https://github.com/ainul21/USIM-Thesis-Templete.git
     ```
 
 2. **Install LaTeX**: Ensure that you have a LaTeX distribution installed on your system. You can use distributions like [TeX Live](https://www.tug.org/texlive/) (Linux/Windows/macOS) or [MikTeX](https://miktex.org/) (Windows/macOS).
